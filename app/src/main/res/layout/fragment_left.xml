@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+   		android:layout_height="wrap_content"
+   		android:background="#0000"
+		android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/Iv_goSearch"
+            android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:background="@mipmap/icon_search"
+   			android:paddingTop="50dp"
+   			></ImageButton>
+		<EditText
+			android:id="@+id/et_search"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+			android:layout_gravity="center"
+		    android:layout_centerVertical="true"
+		    android:gravity="center"
+		    android:hint="查找完点击放大镜"
+		    android:textSize="15sp" 
+		    android:singleLine="true"
+		    android:background="@null"
+		    android:maxLength="15"
+		    android:cursorVisible="true"></EditText>
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+   		android:layout_height="match_parent"
+   		android:background="#0000"
+   		android:orientation="vertical"
+     >
+        <ListView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:paddingBottom="30dp"
+        android:divider="@null"
+         />
+
+        <TextView 
+            android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:text="夜间模式"
+   			android:textSize="15sp"
+   			android:gravity="center"
+			android:layout_centerHorizontal="true"
+			android:layout_alignParentBottom="true"
+   			android:drawableLeft="@android:drawable/ic_menu_compass"
+            />
+	</RelativeLayout>
+</LinearLayout>

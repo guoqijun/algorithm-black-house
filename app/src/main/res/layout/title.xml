@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="#009688">
+    <ImageButton
+        android:id="@+id/bt_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:padding="15dp"
+        android:background="@null"
+        android:src="@mipmap/img_menu" />
+
+    <ImageButton
+        android:id="@+id/bt_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@null"
+        android:src="@mipmap/back"
+        android:visibility="gone"
+         />
+
+    <LinearLayout
+        android:id="@+id/ll_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+         >
+
+        <ImageButton
+            android:id="@+id/bt_search"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/img_group" />
+        <ImageButton
+            android:id="@+id/bt_size"
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@mipmap/icon_textsize" />
+
+        <ImageButton
+            android:id="@+id/bt_share"
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:src="@mipmap/icon_share" />
+    </LinearLayout>
+
+
+</RelativeLayout>
